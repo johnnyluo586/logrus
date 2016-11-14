@@ -16,9 +16,9 @@ type CallerHook struct {
 // Fire 实现
 func (hook *CallerHook) Fire(entry *logrus.Entry) error {
 	if len(entry.Data) == 0 { // if don't use withfields
-		entry.Data["caller"] = hook.caller(7)
+		entry.Data["caller"] = hook.caller(8)
 	} else { // if use withfields
-		entry.Data["caller"] = hook.caller(5)
+		entry.Data["caller"] = hook.caller(6)
 	}
 
 	return nil
