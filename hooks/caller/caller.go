@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/johnnyluo586/logrus"
 )
 
 // CallerHook 需要的钩子
